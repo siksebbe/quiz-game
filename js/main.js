@@ -25,8 +25,15 @@ do {
 	answer2 = answer2.trim();
 } while (answer2 === 'yes');
 
+//
+//Math.floor(Match.random()*5); få ut ett random number.
+//
+//underscore _.sufle to randomise the array
+//
 //The question loop functions;
+
 function stringAnswer(questionArray) {
+	questionArray = _shufle(questionArray);
 	for (var i = 0; i < 3; i++) {
 		var userAnswer = prompt(questionArray[i].question);
 		userAnswer = userAnswer.toLowerCase();
