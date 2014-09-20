@@ -4,7 +4,7 @@ var objH = [
 		answer:'2'
 	},
 	{
-		question:'När dog Diana prinsessa av Wales? \n 1) 1998. \n 2) 1999. \n 3) 1997.',
+		question:'När dog Diana prinsessa av Wales? \n 1) 1996. \n 2) 1999. \n 3) 1997.',
 		answer:'3'
 
 	},
