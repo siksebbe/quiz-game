@@ -3,12 +3,13 @@ alert('quiz game rules \n You will be given a choise betvine tre categories \n a
 
 //Catagory choice in a do while loop using a switch case.
 do {
+	var i;
 	var choose = prompt('choose one of these subjects:\n a) History. \n b)Sport.  \n c)Music.');
 	choose = choose.toLowerCase();
 	choose = choose.trim();
 	switch (choose) {
 	case ('a'):
-		stringAnswer(objH);
+		showQuestion(objH);
 		break;
 	case ('b'):
 		stringAnswer(objS);
@@ -31,24 +32,35 @@ do {
 //underscore _.sufle to randomise the array
 //
 //The question loop functions;
-
-function stringAnswer(questionArray) {
-	questionArray = _shufle(questionArray);
-	for (var i = 0; i < 3; i++) {
-		var userAnswer = prompt(questionArray[i].question);
-		userAnswer = userAnswer.toLowerCase();
-		userAnswer = userAnswer.trim();
-		if (userAnswer === questionArray[i].answer) {
-			if (i !== 2) {
-				alert('You made it you will continou to next question');
-			} else {}
-		} else {
-			break;
-		}
-	}
-	if (i === 3) {
-		alert('Congratulations you made it.');
-	} else {
-		alert('You Faild and have to start over');
+function showQuestion(question) {
+	for (i = 0; i < question.length; i++) {
+		var userAnswer = Number(prompt(question[i].question + '\n' + question[i].tip1 + '\t' + question[i].tip2 + '\n' + question[i].tip3 + '\t' + question[i].tip4));
+		testAnswer(userAnswer, question[i].answer);
 	}
 }
+
+function testAnswer(answer, questionAnswer) {
+	if (answer === questionAnswer) {
+		alert('That it the right answer');
+	} else {
+		alert('That is not the right answer');
+	}
+}
+// function stringAnswer(questionArray) {
+// 	for (var i = 0; i < 3; i++) {
+// 		var userAnswer = prompt(questionArray[i].question);
+// 		userAnswer = userAnswer.toLowerCase();
+// 		userAnswer = userAnswer.trim();
+// 		if (userAnswer === questionArray[i].answer) {
+// 			if (i !== 2) {
+// 				alert('You made it you will continou to next question');
+// 			} else {}
+// 		} else {
+// 			break;
+// 		}
+// 	}
+// 	if (i === 3) {
+// 		alert('Congratulations you made it.');
+// 	} else {
+// 		alert('You Faild and have to start over');
+// 	}

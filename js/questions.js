@@ -1,14 +1,25 @@
 var objH = [{
 	question: 'hej',
-	answer: 'hej'
+	answer: 1,
+	tip1: '1)hej',
+	tip2: '2)nej',
+	tip3: '3)hur',
+	tip4: '4)va?'
 }, {
-	question: 'nej',
-	answer: 'nej'
+	question: 'true',
+	answer: 3,
+	tip1: '1)nope',
+	tip2: '2)maby',
+	tip3: '3)rigth',
+	tip4: '4)what?'
 
 }, {
-	question: 'q3h',
-	answer: 'a3h'
-
+	question: 'current programing languidch',
+	answer: 4,
+	tip1: '1)java',
+	tip2: '2)ruby',
+	tip3: '3)c++',
+	tip4: '4)javascript'
 }, ];
 
 var objS = [{
