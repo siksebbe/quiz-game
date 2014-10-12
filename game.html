@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+  <div class=" mainbox">
+
+      <div class="section 0">
+      <header class="title">
+        <h1>Quiz Game</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to Quiz Game</h2>
+      </div>
+    </div>
+
+
+  <div class="section 1">
+      <header class="title">
+        <h1>Information page</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to information page</h2>
+        <div id="infobox">
+        </div>
+      </div>
+    </div>
+    
+    <div class="section 2">
+      <header class="title">
+        <h1>Choose section</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to Choose section</h2>
+        <div id="catagoryBox">
+          <button class="button history" value="a">History</button>
+          <button class="button musik" value="b">Musik</button>
+          <button class="button sport" value="c">Sport</button>
+          <button class="button random" value="d">Random</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section 3">
+      <header class="title">
+        <h1>Start to play</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to play page</h2>
+        <div id="questionbox">
+         <table>
+         <tbody>
+         <tr>
+           <td id="question">Question:</td>
+           <td id="question1"></td>
+         </tr>
+         <tr>
+           <td><input type="radio" name="answer" id="answer1" value="1"></td>
+           <td><label for="answer1" id="answ1"></label></td>
+         </tr>
+         <tr>
+           <td><input type="radio" name="answer" id="answer2" value="2"></td>
+           <td><label for="answer2" id="answ2"></label></td>
+         </tr>
+         <tr>
+           <td><input type="radio" name="answer" id="answer3" value="3"></td>
+           <td><label for="answer3" id="answ3"></label></td>
+         </tr>
+         <tr>
+           <td><div id="buttonnext"><button id="next">Next</button>
+               <button id="check">Check</button></div></td>
+         </tr>
+         </tbody>
+         </table>
+         
+        </div>
+        <div id="resultbox">
+        <table>
+          <tbody>
+            <tr>
+              <td class="result 1">Your answer is: </td>
+              <td id="youranswer"></td>
+            </tr>
+            <tr>
+              <td class="result 4">Correct answer is: </td>
+              <td id="correctanswer"></td>
+            </tr>
+            <tr>
+              <td class="result 2">Your points are: </td>
+              <td id="yourpoint"></td>
+            </tr>
+            <tr>
+            <td class="result 3"><label for="numq">Input the number of question: </label></td>
+            <td><input type="text" name="numq" id="numq"></td>
+            <td><button id="send">Send</button></td>
+            </tr>
+          </tbody>
+        </table>  
+        </div>
+      </div>
+    </div>
+    <div class="section 4">
+      <header class="title">
+        <h1>Play again</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to Play again</h2>
+      </div>
+      <div id="playagainbox">
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="playagain">Do you want to play again: </label></td>
+              <td><input type="text" name="playagain" id="playagain"></td>
+              <td><button id="send1">Send</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <nav class="menubar">
+        <div class="menuicon 1">Information Page</div>
+        <div class="menuicon 2">Choose section</div>
+        <div class="menuicon 3">Play again</div>
+      </nav>
+    </div>
+</body>
+
+<script src="js/underscore.js"></script>
+<script src="js/game.js"></script>
+<script src="js/game.logic.js"></script>
+<script src="js/game.questions.js"></script>
+<script src="js/game.ui.js"></script>
+<script src="js/game.play.js"></script>
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script src="lib/mainjquery.js"></script>
+
+
+</html>

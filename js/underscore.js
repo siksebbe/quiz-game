@@ -5,8 +5,7 @@
 (function () {
     var n = this,
         t = n._,
-        r = {},
-        e = Array.prototype,
+        r = {}, e = Array.prototype,
         u = Object.prototype,
         i = Function.prototype,
         a = e.push,
@@ -86,14 +85,14 @@
         var u = !0;
         return null == n ? u : d && n.every === d ? n.every(t, e) : (A(n, function (n, i, a) {
             return (u = u && t.call(e, n, i, a)) ? void 0 : r
-        }), !!u)
+        }), !! u)
     };
     var O = j.some = j.any = function (n, t, e) {
         t || (t = j.identity);
         var u = !1;
         return null == n ? u : m && n.some === m ? n.some(t, e) : (A(n, function (n, i, a) {
             return u || (u = t.call(e, n, i, a)) ? r : void 0
-        }), !!u)
+        }), !! u)
     };
     j.contains = j.include = function (n, t) {
         return null == n ? !1 : y && n.indexOf === y ? n.indexOf(t) != -1 : O(n, function (n) {
@@ -179,8 +178,7 @@
     };
     var F = function (n) {
         return function (t, r, e) {
-            var u = {},
-                i = null == r ? j.identity : k(r);
+            var u = {}, i = null == r ? j.identity : k(r);
             return A(t, function (r, a) {
                 var o = i.call(e, r, a, t);
                 n(u, o, r)
@@ -304,10 +302,10 @@
     }, j.memoize = function (n, t) {
         var r = {};
         return t || (t = j.identity),
-            function () {
-                var e = t.apply(this, arguments);
-                return j.has(r, e) ? r[e] : r[e] = n.apply(this, arguments)
-            }
+        function () {
+            var e = t.apply(this, arguments);
+            return j.has(r, e) ? r[e] : r[e] = n.apply(this, arguments)
+        }
     }, j.delay = function (n, t) {
         var r = o.call(arguments, 2);
         return setTimeout(function () {
@@ -333,10 +331,9 @@
         return function () {
             i = this, u = arguments, a = new Date;
             var c = function () {
-                    var l = new Date - a;
-                    t > l ? e = setTimeout(c, t - l) : (e = null, r || (o = n.apply(i, u)))
-                },
-                l = r && !e;
+                var l = new Date - a;
+                t > l ? e = setTimeout(c, t - l) : (e = null, r || (o = n.apply(i, u)))
+            }, l = r && !e;
             return e || (e = setTimeout(c, t)), l && (o = n.apply(i, u)), o
         }
     }, j.once = function (n) {
@@ -383,14 +380,12 @@
                 for (var r in t) n[r] = t[r]
         }), n
     }, j.pick = function (n) {
-        var t = {},
-            r = c.apply(e, o.call(arguments, 1));
+        var t = {}, r = c.apply(e, o.call(arguments, 1));
         return A(r, function (r) {
             r in n && (t[r] = n[r])
         }), t
     }, j.omit = function (n) {
-        var t = {},
-            r = c.apply(e, o.call(arguments, 1));
+        var t = {}, r = c.apply(e, o.call(arguments, 1));
         for (var u in n) j.contains(r, u) || (t[u] = n[u]);
         return t
     }, j.defaults = function (n) {
@@ -538,8 +533,7 @@
             "	": "t",
             "\u2028": "u2028",
             "\u2029": "u2029"
-        },
-        D = /\\|'|\r|\n|\t|\u2028|\u2029/g;
+        }, D = /\\|'|\r|\n|\t|\u2028|\u2029/g;
     j.template = function (n, t, r) {
         var e;
         r = j.defaults({}, r, j.templateSettings);
