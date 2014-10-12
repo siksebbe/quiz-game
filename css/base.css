@@ -5,7 +5,10 @@ html{
         height:95%;
         margin: 0;
         padding: 0;
-        background-color: pink;
+        background-image: url('img/read-books.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+
       }
       .mainbox, .section{
       	height: 100%;
