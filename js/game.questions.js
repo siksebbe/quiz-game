@@ -24,7 +24,7 @@ game.questions.objSport = function () {
 		answer: ['Henrik Lundgvist', 'Christian Eriksen', 'Zlatan Ibrahimovic'],
 		correctAnswer: ['1', 'Henrik Lundgvist']
 	}, {
-		question: 'På vilket land tog Sverige brons VM i fotboll för damer i 2011?',
+		question: 'I vilket land tog Sverige brons VM i fotboll för damer i 2011?',
 		answer: ['London', 'Rom', 'Tyskland'],
 		correctAnswer: ['3', 'Tyskland']
 

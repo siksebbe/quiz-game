@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+  <div class=" mainbox">
+    <div class="section 1">
+      <header class="title">
+        <h1>Information page</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to information page</h2>
+        <div id="infobox">
+
+          <button id="next1">Next</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section 2">
+      <header class="title">
+        <h1>Choose section</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to Choose section</h2>
+        <div id="catagoryBox">
+          <button class="button" value="a">History</button>
+          <button class="button" value="b">Musik</button>
+          <button class="button" value="c">Sport</button>
+          <button class="button" value="d">Random</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section 3">
+      <header class="title">
+        <h1>Start to play</h1>
+      </header>
+      <div class="content">
+        <h2>welcome to play page</h2>
+        <div id="questionbox">
+         <table>
+         <tbody>
+         <tr>
+           <td id="question">Question:</td>
+           <td id="question1"></td>
+         </tr>
+         <tr>
+           <td><input type="radio" name="answer" id="answer1" value="1"></td>
+           <td><label for="answer1" id="answ1"></label></td>
+         </tr>
+         <tr>
+           <td><input type="radio" name="answer" id="answer2" value="2"></td>
+           <td><label for="answer2" id="answ2"></label></td>
+         </tr>
+         <tr>
+           <td><input type="radio" name="answer" id="answer3" value="3"></td>
+           <td><label for="answer3" id="answ3"></label></td>
+         </tr>
+         <tr>
+           <td>Your point is: <span id="point"></span></td>
+           <td id=youranswer> </td>
+         </tr>
+         <tr>
+          <td><button id="next">Next</button></td>
+          <td><button id="check">Check</button></td>
+
+         </tr>
+         </tbody>
+         </table>
+
+        </div>
+      </div>
+    </div>
+    <nav class="menubar">
+      <div class="menuicon 1">Information Page</div>
+      <div class="menuicon 2">Choose section</div>
+      <div class="menuicon 3">Start to play</div>
+    </nav>
+  </div>
+</body>
+
+<script src="js/underscore.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/play.js"></script>
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script src="lib/mainjquery.js"></script>
+
+
+</html>
